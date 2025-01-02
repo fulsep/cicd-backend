@@ -30,3 +30,4 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           files: backend
+          token: ${{ secrets.GH_PAT_TOKEN }}
